@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(13, 92, 238);
+}
+
+h1 {
+  font-size: 28px;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.author {
+  font-size: 18px;
+  font-weight: bold;
+}
+#relatedOp {
+  list-style: none;
+}
+
+aside {
+  border-top: 4px solid rgb(13, 92, 238);
+  border-bottom: 4px solid rgb(13, 92, 238);
+}
+body {
+  background-color: #f7f7f7;
+}
+a:link {
+  text-decoration: none;
+}
+/* a:visited {
+   color: rgb(102, 101, 101); 
+} */
+a:hover {
+  color: orangered;
+  text-decoration: underline dotted orangered;
+  font-weight: bold;
+}
+a:active {
+  background-color: black;
+}
