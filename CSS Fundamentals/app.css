@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -12,6 +17,21 @@ h1,
 h2,
 h3 {
   color: rgb(13, 92, 238);
+  margin-bottom: 30px;
+}
+.main-header {
+  padding: 40px 0;
+  border-top: 4px solid rgb(13, 92, 238);
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.article-header {
+  margin-bottom: 50px;
+}
+
+nav a:link {
+  font-size: 18px;
 }
 
 h1 {
@@ -27,6 +47,13 @@ h3 {
 h4 {
   font-size: 20px;
   text-align: center;
+  margin-top: 10px;
+}
+p {
+  margin-bottom: 10px;
+}
+li {
+  margin-bottom: 10px;
 }
 
 .author {
@@ -40,16 +67,24 @@ h4 {
 aside {
   border-top: 4px solid rgb(13, 92, 238);
   border-bottom: 4px solid rgb(13, 92, 238);
+  margin: 30px 0px;
 }
+
+ol,
+ul {
+  margin-left: 50px;
+}
+
 body {
   background-color: #f7f7f7;
 }
 a:link {
   text-decoration: none;
+  color: rgb(13, 92, 238);
 }
-/* a:visited {
-   color: rgb(102, 101, 101); 
-} */
+a:visited {
+  color: rgb(13, 92, 238);
+}
 a:hover {
   color: orangered;
   text-decoration: underline dotted orangered;
