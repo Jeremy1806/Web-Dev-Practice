@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+aside {
+  border-top: 4px solid rgb(13, 92, 238);
+  border-bottom: 4px solid rgb(13, 92, 238);
+  margin: 30px 0px;
+  width: 500px;
+}
+
+h2::after {
+  content: "TOP";
+  color: #000;
+  background-color: yellow;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(13, 92, 238);
+}
+.main-header {
+  padding: 20px 40px;
+  border-top: 4px solid rgb(13, 92, 238);
+  margin-bottom: 60px;
+  /* padding-left: 20px; */
+}
+
+.article-header {
+  margin-bottom: 50px;
+}
+
+button {
+  padding: 15px 10px;
+  font-size: 25px;
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+}
+
+nav a:link {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 28px;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 30px;
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+li {
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 18px;
+  font-weight: bold;
+}
+#relatedOp {
+  list-style: none;
+}
+
+aside p {
+  margin-top: 5px;
+}
+
+ol,
+ul {
+  margin-left: 50px;
+}
+
+a:link {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: rgb(13, 92, 238);
+  display: inline-block;
+  margin: 10px 30px 0 0;
+}
+a:visited {
+  color: rgb(13, 92, 238);
+}
+a:hover {
+  color: orangered;
+  text-decoration: underline dotted orangered;
+  font-weight: bold;
+}
+a:active {
+  background-color: black;
+}
+
+.post-img {
+  width: 800px;
+  height: auto;
+}
+
+/* layout */
+
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.auth {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+.clear-fix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
