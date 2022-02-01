@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,7 +17,6 @@ aside {
   border-top: 4px solid rgb(13, 92, 238);
   border-bottom: 4px solid rgb(13, 92, 238);
   margin: 30px 0px;
-  box-sizing: border-box;
 }
 
 h2::after {
@@ -96,30 +96,45 @@ li {
 }
 
 .author {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
 }
 #relatedOp {
   list-style: none;
   margin-left: 0;
 }
 
-aside p {
-  margin-top: 5px;
-}
-
 ol,
 ul {
   margin-left: 50px;
 }
+.author-img {
+  margin-bottom: 20px;
+}
+.author {
+  margin-bottom: 0;
+}
 
+.related-post {
+  margin-left: 30px;
+}
+#relatedOp:last-child {
+  margin-bottom: 50px;
+}
 a:link {
   text-decoration: none;
   font-family: sans-serif;
   color: rgb(13, 92, 238);
   display: inline-block;
-  margin: 10px 30px 0 0;
 }
+.main-header a:link {
+  margin: 0 20px;
+}
+.related-post a:link {
+  font-weight: bold;
+  font-size: 16px;
+}
+
 a:visited {
   color: rgb(13, 92, 238);
 }
@@ -141,7 +156,7 @@ a:active {
 
 /* layout */
 
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 10px;
 }
@@ -166,7 +181,7 @@ nav {
 
 /* float layout */
 
-article {
+/* article {
   width: 830px;
   float: left;
 }
@@ -178,4 +193,36 @@ aside {
 
 footer {
   clear: both;
+} */
+article {
+  flex: 1;
+  margin-bottom: 40px;
+}
+
+/* Flexbox layout */
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.related-post {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.author-details {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.container-2 {
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+
+aside {
+  flex: 0 0 300px;
 }
