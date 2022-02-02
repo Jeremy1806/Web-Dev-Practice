@@ -48,7 +48,7 @@ h3 {
 .main-header {
   padding: 20px 40px;
   border-top: 4px solid rgb(13, 92, 238);
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* padding-left: 20px; */
 }
 
@@ -194,10 +194,10 @@ aside {
 footer {
   clear: both;
 } */
-article {
+/* article {
   flex: 1;
   margin-bottom: 40px;
-}
+} */
 
 /* Flexbox layout */
 
@@ -217,7 +217,7 @@ article {
   align-items: center;
 }
 
-.container-2 {
+/* .container-2 {
   display: flex;
   gap: 75px;
   align-items: flex-start;
@@ -225,4 +225,24 @@ article {
 
 aside {
   flex: 0 0 300px;
+} */
+
+/* Grid Layout */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  align-items: start;
+  row-gap: 60px;
+}
+.main-header {
+  grid-column: 1/-1;
+}
+/* article {
+}
+aside {
+} */
+footer {
+  grid-column: 1/-1;
 }
