@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hero section</title>
+    <style>
+      * {
+        margin: 0;
+        border: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Rubik", sans-serif;
+      }
+      body {
+        /* color: white; */
+      }
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .header-container {
+        width: 1200px;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      header {
+        padding-top: 24px;
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.548),
+            rgba(0, 0, 0, 0.562)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+      }
+      section {
+        padding: 72px 0;
+      }
+      .inner-container {
+        width: 50%;
+      }
+      h1 {
+        font-size: 48px;
+        margin-bottom: 36px;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 52px;
+      }
+      h2 {
+        margin-bottom: 48px;
+      }
+
+      .btnn:link,
+      .btnn:visited {
+        padding: 12px 24px;
+        display: inline-block;
+        background-color: #fd7e14;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 8px;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .btnn:hover,
+      .btnn:active {
+        background-color: #ff922b;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+      <div class="header-container">
+        <div class="inner-container">
+          <h1>A healthy meal delivered to your door, every single day</h1>
+          <p>
+            A smart 24*7 in a year food subscription that will help you eat
+            healthy again. Tailored to your personal needs and nutrients.
+          </p>
+          <a href="#" class="btnn">Start eating well</a>
+        </div>
+        <div></div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>Anonymous</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque,
+          maxime minus sint dignissimos iusto alias laboriosam dolor voluptatem
+          nihil facere placeat quibusdam laborum magnam illum facilis earum
+          temporibus ullam exercitationem.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
